@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import { useNavModal } from "./NavModalContext";
 
 import {
   HiOutlineFolder,
@@ -8,7 +9,6 @@ import {
   HiOutlineInformationCircle,
   HiOutlineWrenchScrewdriver,
 } from "react-icons/hi2";
-import { useNavModal } from "./NavModalContext";
 
 const navModalLinks = [
   {

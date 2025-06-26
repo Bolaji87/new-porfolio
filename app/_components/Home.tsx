@@ -33,6 +33,7 @@ function Home() {
               alt="bolaji"
               placeholder="blur"
               fill
+              sizes="(min-width: 640px) 450px, 320px"
               className="object-cover object-top rounded-full sm:rounded-2xl"
             />
           </div>
