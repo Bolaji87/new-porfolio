@@ -7,7 +7,7 @@ import ScrollToTop from "./_components/ScrollToTop";
 
 export default function Page() {
   return (
-    <div className="pt-20 ">
+    <div className="">
       <section id="home">
         <Home />
       </section>

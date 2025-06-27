@@ -4,7 +4,7 @@ import SocialLinks from "./SocialLinks";
 
 function ContactMe() {
   return (
-    <section className="py-12 pt-22 px-8 sm:px-12 md:px-14 lg:px-24  min-h-screen bg-sky-900   text-stone-800">
+    <section className="py-12 pt-22 px-8 sm:px-12 md:px-14 lg:px-24  min-h-screen bg-gray-200   text-stone-800">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
         <p className="mb-8 text-stone-500 font-semibold text-lg">

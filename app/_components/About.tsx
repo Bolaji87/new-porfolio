@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function AboutMe() {
   return (
-    <section className=" min-h-screen bg-sky-900 pt-20 px-4 py-12 ">
+    <section className=" min-h-screen bg-gray-200 pt-20 px-4 py-12 ">
       <div className="max-w-7xl mx-auto text-center text-stone-800">
         <h2 className="text-3xl font-bold mb-6 text-primary">About Me</h2>
         <p className="text-lg  mb-4">

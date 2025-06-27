@@ -9,7 +9,7 @@ function Projects() {
   const { handleSelect, handleClose, selectedProject } = useProjects();
 
   return (
-    <section className="min-h-screen bg-sky-900 px-6 py-20 text-stone-800  sm:px-12 md:px-16 lg:px-24">
+    <section className="min-h-screen bg-gray-200 px-6 py-20 text-stone-800  sm:px-12 md:px-16 lg:px-24">
       <div className="mx-auto max-w-6xl">
         <header className="mb-12 text-center">
           <h2 className="text-3xl font-bold">My Projects</h2>

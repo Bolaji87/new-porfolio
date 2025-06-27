@@ -74,7 +74,7 @@ const skillSet: SkillType[] = [
 
 function Skills() {
   return (
-    <div className=" pt-10 bg-sky-900 ">
+    <div className=" pt-10 bg-gray-200 ">
       <section className="min-h-screen max-w-7xl  mx-auto px-8 sm:px-12 md:px-14 ">
         <div className="text-center space-y-6  mb-3  py-10">
           <h3 className="text-2xl sm:text-3xl text-gray-800 font-bold">
