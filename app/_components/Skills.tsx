@@ -81,7 +81,7 @@ function Skills() {
             My Skills
           </h3>
           <p className="font-bold text-stone-800 text-xl">
-            Here are the technologies I've worked with
+            Here are the technologies I&rsquo;ve worked with
           </p>
         </div>
         <ul className="grid place-items-center grid-cols-1 sm:grid-cols-2 sm:gap-x-26 md:grid-cols-3 md:gap-x-68 md:px-26 lg:grid-cols-4 gap-x-20  gap-y-12 px-4 py-2">

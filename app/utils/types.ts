@@ -1,4 +1,3 @@
-import { Project } from "./types";
 export interface Project {
   id: number;
   title: string;

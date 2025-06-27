@@ -33,10 +33,8 @@ export default function ThemeToggle() {
   return (
     <div
       onClick={toggleTheme}
-      //   className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white"
       className="p-2 rounded-lg bg-sky-700 dark:bg-gray-50 text-white dark:text-sky-700 text-xl sm:block font-bold"
     >
-      {/* {darkMode ? "☀️ Light" : "🌙 Dark"} */}
       {darkMode ? <HiOutlineSun /> : <HiOutlineMoon />}
     </div>
   );
