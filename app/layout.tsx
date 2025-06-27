@@ -5,6 +5,7 @@ import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 
 import { NavModalProvider } from "./_components/NavModalContext";
+import { DarkModeProvider } from "./contexts/DarkModeContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,11 +32,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased mx-auto`}
       >
-        <NavModalProvider>
-          <Header />
-        </NavModalProvider>
-        <main>{children}</main>
-        <Footer />
+        <DarkModeProvider>
+          <NavModalProvider>
+            <Header />
+          </NavModalProvider>
+          <main>{children}</main>
+          <Footer />
+        </DarkModeProvider>
       </body>
     </html>
   );

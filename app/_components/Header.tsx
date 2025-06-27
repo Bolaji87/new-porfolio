@@ -1,6 +1,6 @@
 "use client";
 import IconButton from "./IconButton";
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "./ToggleDarkMode";
 import HamburgerMenu from "./HamburgerMenu";
 import NavModal from "./NavModal";
 import { useNavModal } from "./NavModalContext";
