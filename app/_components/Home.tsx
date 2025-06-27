@@ -6,7 +6,7 @@ import SocialLinks from "./SocialLinks";
 
 function Home() {
   return (
-    <div className="min-h-screen pt-20 bg-gray-100 py-10">
+    <div className="min-h-screen pt-20 bg-sky-900 py-10">
       <div className="max-w-6xl text-stone-800 mx-auto sm:flex-row flex-col-reverse gap-5 items-center  flex sm:justify-between px-4 ">
         <main className="flex flex-col justify-center items-start mt-16 gap-4">
           <h1 className="sm:text-4xl text-3xl  sm:font-bold">
