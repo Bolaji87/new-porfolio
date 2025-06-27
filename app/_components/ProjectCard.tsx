@@ -21,7 +21,7 @@ function ProjectCard({ project, onSelect }: ProjectCardProps) {
         <h3 className="text-lg font-semibold mb-1 text-sky-700">
           {project.title}
         </h3>
-        <p className="text-gray-600 text-sm">{project.description}</p>
+        <p className="text-stone-700 text-sm">{project.description}</p>
       </div>
     </div>
   );

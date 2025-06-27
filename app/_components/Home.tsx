@@ -7,13 +7,13 @@ import SocialLinks from "./SocialLinks";
 function Home() {
   return (
     <div className="min-h-screen bg-gray-200 py-10">
-      <div className="max-w-6xl text-stone-800 mx-auto sm:flex-row flex-col-reverse gap-5 items-center  flex sm:justify-between px-4 ">
+      <div className="max-w-6xl mx-auto sm:flex-row flex-col-reverse gap-5 items-center  flex sm:justify-between px-4 ">
         <main className="flex flex-col justify-center items-start mt-16 gap-4">
-          <h1 className="sm:text-4xl text-3xl  sm:font-bold">
+          <h1 className="sm:text-4xl text-stone-800  text-3xl  sm:font-bold">
             Saka Bolaji Waheed
           </h1>
 
-          <p className="text-lg">
+          <p className="text-lg text-stone-700 text-balance ">
             Welcome to my portfolio! I&apos;m a frontend developer passionate
             about building modern, responsive web applications with React,
             Next.js, and TypeScript. I specialize in creating scalable,

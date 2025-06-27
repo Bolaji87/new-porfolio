@@ -13,7 +13,7 @@ function Projects() {
       <div className="mx-auto max-w-6xl">
         <header className="mb-12 text-center">
           <h2 className="text-3xl font-bold">My Projects</h2>
-          <p className="mt-2 text-lg text-gray-600 ">
+          <p className="mt-2 text-lg text-stone-700 ">
             Check out some of my recent work
           </p>
         </header>

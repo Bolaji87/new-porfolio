@@ -80,7 +80,7 @@ function Skills() {
           <h3 className="text-2xl sm:text-3xl text-gray-800 font-bold">
             My Skills
           </h3>
-          <p className="font-bold text-stone-800 text-xl">
+          <p className="font-bold text-stone-700 text-xl">
             Here are the technologies I&rsquo;ve worked with
           </p>
         </div>
