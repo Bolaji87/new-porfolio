@@ -1,5 +1,3 @@
-// components/AboutMe.tsx
-
 import React from "react";
 import Link from "next/link";
 
@@ -9,14 +7,16 @@ function AboutMe() {
       <div className="max-w-7xl mx-auto text-center text-stone-800">
         <h2 className="text-3xl font-bold mb-6 text-primary">About Me</h2>
         <p className="text-lg  mb-4">
-          Hi, I'm <span className="font-semibold text-sky-500">Bolaji</span> —
-          nice to meet you! 👋 Please take a look around.
+          Hi, I&rsquo;m{" "}
+          <span className="font-semibold text-sky-500">Bolaji</span> — nice to
+          meet you! 👋 Please take a look around.
         </p>
         <p className="text-lg  mb-4">
-          I'm a frontend developer passionate about crafting modern, responsive,
-          and accessible web applications. I specialize in creating seamless
-          user experiences using clean, scalable code and modern technologies
-          like <span className="font-medium text-sky-500">React</span>,{" "}
+          I&rsquo;m a frontend developer passionate about crafting modern,
+          responsive, and accessible web applications. I specialize in creating
+          seamless user experiences using clean, scalable code and modern
+          technologies like{" "}
+          <span className="font-medium text-sky-500">React</span>,{" "}
           <span className="font-medium text-sky-500">Next.js</span>, and{" "}
           <span className="font-medium text-sky-500">TypeScript</span>.
         </p>

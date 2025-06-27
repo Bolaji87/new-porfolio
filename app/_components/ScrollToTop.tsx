@@ -2,11 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
-// interface ScrollToTopContentType {
-//   isVisible: boolean;
-//   handleScrollUp: () => void;
-// }
-
 function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 

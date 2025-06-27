@@ -8,7 +8,7 @@ function ContactMe() {
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
         <p className="mb-8 text-stone-500 font-semibold text-lg">
-          Have a project or question? Send me a message and let's chat!
+          Have a project or question? Send me a message and let&rsquo;s chat!
         </p>
 
         <form
@@ -32,7 +32,7 @@ function ContactMe() {
           />
           <textarea
             name="message"
-            rows="5"
+            rows={5}
             placeholder="Your Message"
             required
             className="w-full px-4 py-2 border border-gray-300 rounded"

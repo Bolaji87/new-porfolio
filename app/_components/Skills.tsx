@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React, { ReactNode } from "react";
 
 type SkillType = {
   id: string;
@@ -7,7 +6,6 @@ type SkillType = {
   skillLogo: string;
 };
 
-// Prop type for the Skill component
 type SkillProps = {
   skill: SkillType;
 };

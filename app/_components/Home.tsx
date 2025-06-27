@@ -14,10 +14,11 @@ function Home() {
           </h1>
 
           <p className="text-lg">
-            Welcome to my portfolio! I'm a frontend developer passionate about
-            building modern, responsive web applications with React, Next.js,
-            and TypeScript. I specialize in creating scalable, maintainable UIs
-            using functional components, React Hooks, and modern JavaScript.
+            Welcome to my portfolio! I&rsqu;m a frontend developer passionate
+            about building modern, responsive web applications with React,
+            Next.js, and TypeScript. I specialize in creating scalable,
+            maintainable UIs using functional components, React Hooks, and
+            modern JavaScript.
           </p>
           <div className="flex items-center gap-5 mb-3">
             <IconButton id="#projects">Projects</IconButton>
