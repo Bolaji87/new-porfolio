@@ -7,7 +7,7 @@ import ScrollToTop from "./_components/ScrollToTop";
 
 export default function Page() {
   return (
-    <div className="pt-20 dark:bg-gray-800">
+    <div className="pt-20 ">
       <section id="home">
         <Home />
       </section>

@@ -16,7 +16,7 @@ function ProjectModal({ project, onClose }: ProjectModalProps) {
       role="dialog"
       aria-modal="true"
     >
-      <div className="relative w-full max-w-lg rounded-lg bg-white p-6 shadow-lg animate-fadeIn dark:bg-gray-800">
+      <div className="relative w-full max-w-lg rounded-lg bg-white p-6 shadow-lg animate-fadeIn">
         <button
           aria-label="Close modal"
           onClick={onClose}
@@ -33,12 +33,10 @@ function ProjectModal({ project, onClose }: ProjectModalProps) {
           className="mb-4 h-48 w-full rounded object-cover object-top"
         />
 
-        <h3 className="mb-2 text-2xl font-bold text-sky-700 dark:text-sky-400">
+        <h3 className="mb-2 text-2xl font-bold text-sky-700 ">
           {project.title}
         </h3>
-        <p className="text-gray-700 dark:text-gray-300">
-          {project.description}
-        </p>
+        <p className="text-gray-700 ">{project.description}</p>
 
         <div className="mt-6 flex items-center justify-between gap-4">
           <Link
@@ -46,7 +44,7 @@ function ProjectModal({ project, onClose }: ProjectModalProps) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="View source on GitHub"
-            className="rounded-full bg-black p-3 text-white transition hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+            className="rounded-full bg-black p-3 text-white transition hover:bg-gray-800"
           >
             <FaGithub className="text-2xl" />
           </Link>
