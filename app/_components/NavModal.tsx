@@ -38,7 +38,7 @@ function NavModal() {
   const { toggleModal } = useNavModal();
 
   return (
-    <nav className="bg-gray-50  shadow-2xl w-75 rounded-sm h-[420px]  py-8 px-6">
+    <nav className="bg-sky-900  shadow-2xl w-75 rounded-sm h-[420px]  py-8 px-6">
       <ul className="flex flex-col font-semibold mt-4 gap-6 text-xl">
         {navModalLinks.map((link) => (
           <li key={link.name}>
