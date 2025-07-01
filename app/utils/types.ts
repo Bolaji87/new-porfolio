@@ -4,6 +4,7 @@ export interface Project {
   image: string;
   description: string;
   domain: string;
+  gitLink: string;
 }
 
 export interface ProjectCardProps {

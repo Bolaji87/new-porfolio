@@ -40,7 +40,7 @@ function ProjectModal({ project, onClose }: ProjectModalProps) {
 
         <div className="mt-6 flex items-center justify-between gap-4">
           <Link
-            href="https://github.com/Bolaji87"
+            href={project.gitLink}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="View source on GitHub"
