@@ -25,7 +25,7 @@ function AboutMe() {
           only look great but also function flawlessly across devices.
         </p>
 
-        <Link href="/Bolaji_Resume.pdf" target="_blank">
+        <Link href="/bolaji-resume.pdf" target="_blank">
           <button className="px-6 py-3 bg-primary  font-semibold rounded-xl shadow-md hover:bg-primary-600 transition duration-300">
             📄 View My Resume
           </button>
