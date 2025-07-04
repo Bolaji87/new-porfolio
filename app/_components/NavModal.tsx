@@ -38,14 +38,14 @@ function NavModal() {
   const { toggleModal } = useNavModal();
 
   return (
-    <nav className="bg-sky-800  shadow-2xl w-75 rounded-sm h-[420px]  py-8 px-6">
+    <nav className="bg-gray-200  shadow-2xl w-75 rounded-md h-[420px]  py-8 px-6">
       <ul className="flex flex-col font-semibold mt-4 gap-6 text-xl">
         {navModalLinks.map((link) => (
           <li key={link.name}>
             <Link
               href={link.href}
               onClick={toggleModal}
-              className="flex gap-6 px-12 py-3 items-center justify-start hover:text-gray-800 rounded  ease-in-out hover:rounded hover:bg-gray-100  transition duration-300 "
+              className="flex gap-6 px-12 py-3 items-center text-stone-800 justify-start hover:text-stone-900 rounded  ease-in-out hover:rounded hover:bg-gray-100  transition duration-300 "
             >
               {link.icon}
               <span> {link.name}</span>
