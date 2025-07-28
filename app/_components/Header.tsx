@@ -3,34 +3,28 @@ import IconButton from "./IconButton";
 import HamburgerMenu from "./HamburgerMenu";
 import NavModal from "./NavModal";
 import { useNavModal } from "./NavModalContext";
+import Toggletheme from "./Toggletheme";
+import { useThemeStore } from "../store/themeStore";
+import { Container } from "./shared/Container";
+import NavItem from "./NavItem";
+import { navItems } from "../utils/data";
 
 function Header() {
   const { isOpen } = useNavModal();
+  const { theme, toggleTheme } = useThemeStore();
 
   return (
-    <header className="py-4 bg-gray-50 w-full sticky top-0 z-50 scroll-smooth  shadow-lg">
-      <div className="flex text-lg  items-center max-w-6xl mx-auto justify-between lg:px-0 px-3">
+    <header className="py-4 bg-white/80 dark:bg-sky-900 w-full sticky top-0 z-50 scroll-smooth  shadow-lg">
+      <Container className="flex items-center justify-between ">
         <h1 className="sm:text-xl text-lg  cursor-pointer font-semibold text-sky-500 hover:text-sky-600">
           SB
         </h1>
 
-        <nav>
-          <ul className="sm:flex hidden  font-semibold text-lg items-center gap-6">
-            <li className="hover:text-sky-600 hover:scale-110 transition duration-300  text-sky-500">
-              <a href="#home">Home</a>
-            </li>
-            <li className="hover:text-sky-600 hover:scale-110 transition duration-300  text-sky-500">
-              <a href="#about">About</a>
-            </li>
-            <li className="hover:text-sky-600 hover:scale-110 transition duration-300  text-sky-500">
-              <a href="#projects">Projects</a>
-            </li>
-            <li className="hover:text-sky-600 hover:scale-110 transition duration-300  text-sky-500">
-              <a href="#skills">Skills</a>
-            </li>
-            <li className="hover:text-sky-600 hover:scale-110 transition duration-300  text-sky-500">
-              <a href="#contact">Contact</a>
-            </li>
+        <nav className=" lg:h-auto h-0  w-full absolute top-full left-0 lg:static lg:top-0  lg:bg-transparent">
+          <ul className="lg:flex hidden lg:flex-row lg:justify-center lg:items-center gap-5">
+            {navItems.map((item, key) => (
+              <NavItem key={key} text={item.text} href={item.href} />
+            ))}
           </ul>
         </nav>
         <div className="flex items-center gap-4">
@@ -39,11 +33,12 @@ function Header() {
           </IconButton>
 
           <HamburgerMenu />
+          <Toggletheme theme={theme} toggleTheme={toggleTheme} />
           <div className=" absolute top-20 right-2 ">
             {isOpen && <NavModal />}
           </div>
         </div>
-      </div>
+      </Container>
     </header>
   );
 }

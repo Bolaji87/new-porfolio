@@ -37,3 +37,26 @@ export const projects: Project[] = [
     gitLink: "https://github.com/Bolaji87/weather-app",
   },
 ];
+
+export const navItems = [
+  {
+    href: "#",
+    text: "Home",
+  },
+  {
+    href: "#services",
+    text: "About",
+  },
+  {
+    href: "#about-us",
+    text: "Projects",
+  },
+  {
+    href: "#pricing",
+    text: "Skills",
+  },
+  {
+    href: "#pricing",
+    text: "Contact",
+  },
+];

@@ -6,7 +6,7 @@ function SocialLinks() {
   return (
     <div className="flex mt-2 gap-8">
       <div className="p-2 rounded-full bg-black hover:bg-gray-800 transition">
-        <Link href="https://github.com/Bolaji87">
+        <Link href="https://github.com/Bolaji87/new-porfolio">
           <FaGithub className="text-white text-2xl" />
         </Link>
       </div>
