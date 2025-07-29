@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import bolajiImage from "@/public/chatgpt-image.png";
+import myImage from "@/public/chatgpt-image.png";
 import IconButton from "./IconButton";
 import SocialLinks from "./SocialLinks";
 import { Container } from "./shared/Container";
@@ -15,7 +15,7 @@ function Home() {
               Saka Bolaji Waheed
             </h1>
 
-            <p className="text-lg text-stone-700 text-balance ">
+            <p className="text-lg text-stone-800 text-balance ">
               Welcome to my portfolio! I&apos;m a frontend developer passionate
               about building modern, responsive web applications with React,
               Next.js, and TypeScript. I specialize in creating scalable,
@@ -32,7 +32,7 @@ function Home() {
           <section>
             <div className="relative h-80 w-80 sm:w-[450px] sm:h-[450px] aspect-video sm:aspect-square">
               <Image
-                src={bolajiImage}
+                src={myImage}
                 alt="bolaji"
                 placeholder="blur"
                 fill

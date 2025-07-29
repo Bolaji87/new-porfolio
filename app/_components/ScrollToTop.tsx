@@ -29,7 +29,7 @@ function ScrollToTop() {
   return (
     <button
       onClick={handleScrollUp}
-      className="fixed bottom-6 right-6 z-50 bg-sky-500 text-gray-50 p-3 rounded-full shadow-lg hover:text-gray-100 hover:bg-sky-700 transition-all ease-in-out duration-300"
+      className="fixed bottom-6 right-6 z-50 bg-stone-800 text-gray-50 p-3 rounded-full shadow-lg hover:text-gray-100 hover:bg-stone-900 transition-all ease-in-out duration-300"
       aria-label="Scroll to top"
     >
       <FaArrowUp />

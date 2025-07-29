@@ -8,6 +8,7 @@ import { useThemeStore } from "../store/themeStore";
 import { Container } from "./shared/Container";
 import NavItem from "./NavItem";
 import { navItems } from "../utils/data";
+import Image from "next/image";
 
 function Header() {
   const { isOpen } = useNavModal();
@@ -16,9 +17,15 @@ function Header() {
   return (
     <header className="py-4 bg-white dark:bg-sky-900 w-full sticky top-0 z-50 scroll-smooth  shadow-lg">
       <Container className="flex items-center justify-between ">
-        <h1 className="sm:text-xl text-lg  cursor-pointer font-semibold text-sky-500 hover:text-sky-600">
-          SB
-        </h1>
+        <div className="sm:text-3xl text-xl rounded-full p-1.5 cursor-pointer font-semibold bg-violet-600">
+          <Image
+            width={100}
+            height={100}
+            src="/logo/logo-1-primary.png"
+            alt="logo"
+            className=" w-9 h-10 md:h-12 md:w-13 font-bold rounded-full bg-violet-600 object-cover"
+          />
+        </div>
 
         <nav className=" lg:h-auto h-0  w-full absolute top-full left-0 lg:static lg:top-0  lg:bg-transparent">
           <ul className="lg:flex hidden lg:flex-row lg:justify-center lg:items-center gap-5">

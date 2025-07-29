@@ -49,7 +49,7 @@ function Skill({ skill }: SkillProps) {
         width={60}
         height={56}
         className="aspect-square max-w-full w-72 md:w-65 object-center object-cover "
-        src={`/images/${skill}.png`}
+        src={`/skills/${skill}.png`}
         alt={skill}
       />
       <p className="font-semibold text-md w-60 text-center text-stone-800 text-lg">

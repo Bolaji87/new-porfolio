@@ -33,10 +33,10 @@ function ProjectModal({ project, onClose }: ProjectModalProps) {
           className="mb-4 h-48 w-full rounded object-cover object-top"
         />
 
-        <h3 className="mb-2 text-2xl font-bold text-sky-700 ">
+        <h3 className="mb-2 text-2xl font-bold text-stone-800 ">
           {project.title}
         </h3>
-        <p className="text-gray-700 ">{project.description}</p>
+        <p className="text-gray-800 ">{project.description}</p>
 
         <div className="mt-6 flex items-center justify-between gap-4">
           <Link

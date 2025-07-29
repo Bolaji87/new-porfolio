@@ -6,7 +6,7 @@ function ProjectCard({ project, onSelect }: ProjectCardProps) {
   return (
     <div
       onClick={() => onSelect(project)}
-      className="bg-sky-100 rounded-xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition-transform duration-300 focus:ring-2 focus:ring-sky-400"
+      className="bg-gray-200 rounded-xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition-transform duration-300 "
     >
       <Image
         width={330}
@@ -18,7 +18,7 @@ function ProjectCard({ project, onSelect }: ProjectCardProps) {
         priority
       />
       <div className="p-5 text-left">
-        <h3 className="text-lg font-semibold mb-1 text-sky-700">
+        <h3 className="text-lg font-semibold mb-1 text-stone-800">
           {project.title}
         </h3>
         <p className="text-stone-700 text-sm">{project.description}</p>

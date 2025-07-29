@@ -3,17 +3,17 @@ import React, { ReactNode } from "react";
 
 type IconButtonProps = {
   children: ReactNode;
-  id: string;
+  id?: string;
   onClick?: () => void;
   className?: string;
   type?: "button" | "submit" | "reset";
 };
 
-function IconButton({ children, id }: IconButtonProps) {
+function IconButton({ children, id, className = "" }: IconButtonProps) {
   if (id === "#projects")
     return (
       <Link
-        className="bg-sky-500 w-full min-w-max text-white hover:bg-sky-600 transition-all ease-in-out py-2 px-5 rounded-md"
+        className={`bg-violet-600 w-full min-w-max text-white hover:bg-violet-700 transition-all duration-300 ease-in-out py-3 px-5 rounded-full ${className}`}
         href="#projects"
       >
         {children}
@@ -22,7 +22,7 @@ function IconButton({ children, id }: IconButtonProps) {
   if (id === "#contact")
     return (
       <Link
-        className="bg-sky-500 w-full min-w-max text-white hover:bg-sky-600 transition-all ease-in-out py-2 px-5 rounded-md"
+        className={`bg-violet-600 w-full min-w-max text-white hover:bg-violet-700 transition-all duration-300 ease-in-out py-3 px-5 rounded-full ${className}`}
         href="#contact"
       >
         {children}
@@ -31,8 +31,8 @@ function IconButton({ children, id }: IconButtonProps) {
 
   return (
     <button
-      id={id}
-      className="bg-sky-500 w-full min-w-max text-white hover:bg-sky-600 transition-all ease-in-out py-2 px-5 rounded-md"
+      // id={id}
+      className={`bg-violet-600 w-full min-w-max text-white hover:bg-violet-700 transition-all ease-in-out py-3 px-5 rounded-full ${className}`}
     >
       {children}
     </button>

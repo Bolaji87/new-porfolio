@@ -40,7 +40,7 @@ function ContactMe() {
               className="w-full px-4 py-2 text-stone-700  placeholder:text-stone-600 border border-gray-300 rounded"
             ></textarea>
 
-            <IconButton id="">Send Message</IconButton>
+            <IconButton>Send Message</IconButton>
           </form>
           <div className="flex justify-center sm:justify-start">
             <SocialLinks />

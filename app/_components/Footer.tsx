@@ -30,7 +30,7 @@ const footerLinks = [
 function Footer() {
   const year: number = 2024;
   return (
-    <footer className="bg-sky-900 text-gray-300 py-8 px-4">
+    <footer className="bg-indigo-900 text-gray-300 py-8 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
         <div>
           <h2 className="text-xl font-bold text-white">Saka Bolaji Waheed</h2>
