@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
+import { ThemeStore } from "../utils/types";
 
-function Toggletheme({ theme, toggleTheme }: any) {
+function Toggletheme({ theme, toggleTheme }: ThemeStore) {
   return (
     <button
       onClick={toggleTheme}

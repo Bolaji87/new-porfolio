@@ -24,3 +24,10 @@ export interface ProjectLinkBtnProp {
 export interface SkillProps {
   skill: string;
 }
+
+type Theme = "light" | "dark";
+
+export interface ThemeStore {
+  theme: Theme;
+  toggleTheme: () => void;
+}

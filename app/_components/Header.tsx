@@ -1,14 +1,16 @@
 "use client";
+import Image from "next/image";
+
 import IconButton from "./IconButton";
 import HamburgerMenu from "./HamburgerMenu";
 import NavModal from "./NavModal";
-import { useNavModal } from "./NavModalContext";
 import Toggletheme from "./Toggletheme";
+import { useNavModal } from "./NavModalContext";
+import NavItem from "./NavItem";
+
 import { useThemeStore } from "../store/themeStore";
 import { Container } from "./shared/Container";
-import NavItem from "./NavItem";
 import { navItems } from "../utils/data";
-import Image from "next/image";
 
 function Header() {
   const { isOpen } = useNavModal();
