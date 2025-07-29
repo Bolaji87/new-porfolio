@@ -20,3 +20,7 @@ export interface ProjectModalProps {
 export interface ProjectLinkBtnProp {
   project: Project;
 }
+
+export interface SkillProps {
+  skill: string;
+}

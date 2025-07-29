@@ -14,7 +14,7 @@ function Header() {
   const { theme, toggleTheme } = useThemeStore();
 
   return (
-    <header className="py-4 bg-white/80 dark:bg-sky-900 w-full sticky top-0 z-50 scroll-smooth  shadow-lg">
+    <header className="py-4 bg-white dark:bg-sky-900 w-full sticky top-0 z-50 scroll-smooth  shadow-lg">
       <Container className="flex items-center justify-between ">
         <h1 className="sm:text-xl text-lg  cursor-pointer font-semibold text-sky-500 hover:text-sky-600">
           SB

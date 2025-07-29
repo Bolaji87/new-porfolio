@@ -40,23 +40,36 @@ export const projects: Project[] = [
 
 export const navItems = [
   {
-    href: "#",
+    href: "#home",
     text: "Home",
   },
   {
-    href: "#services",
+    href: "#about",
     text: "About",
   },
   {
-    href: "#about-us",
+    href: "#projects",
     text: "Projects",
   },
   {
-    href: "#pricing",
+    href: "#skills",
     text: "Skills",
   },
   {
-    href: "#pricing",
+    href: "#contact",
     text: "Contact",
   },
+];
+export const skillItems = [
+  "html-5",
+  "css-3",
+  "js",
+  "react",
+  "git",
+  "github",
+  "tailwindcss",
+  "nextjs",
+  "typescript",
+  "supabase",
+  "redux",
 ];

@@ -1,81 +1,12 @@
 import Image from "next/image";
-
-type SkillType = {
-  id: string;
-  skillName: string;
-  skillLogo: string;
-};
-
-type SkillProps = {
-  skill: SkillType;
-};
-
-const skillSet: SkillType[] = [
-  {
-    id: crypto.randomUUID(),
-    skillName: "HTML",
-    skillLogo: "/images/html-5.png",
-  },
-
-  {
-    id: crypto.randomUUID(),
-    skillName: "CSS",
-    skillLogo: "/images/css-3.png",
-  },
-
-  {
-    id: crypto.randomUUID(),
-    skillName: "JavaScript",
-    skillLogo: "/images/js.png",
-  },
-
-  {
-    id: crypto.randomUUID(),
-    skillName: "React",
-    skillLogo: "/images/react.png",
-  },
-  {
-    id: crypto.randomUUID(),
-    skillName: "Git",
-    skillLogo: "/images/git.png",
-  },
-  {
-    id: crypto.randomUUID(),
-    skillName: "Github",
-    skillLogo: "/images/github.png",
-  },
-
-  {
-    id: crypto.randomUUID(),
-    skillName: "Tailwind CSS",
-    skillLogo: "/images/tailwindcss.png",
-  },
-  {
-    id: crypto.randomUUID(),
-    skillName: "Next.js",
-    skillLogo: "/images/nextjs.png",
-  },
-  {
-    id: crypto.randomUUID(),
-    skillName: "TypeScript",
-    skillLogo: "/images/typescript.png",
-  },
-  {
-    id: crypto.randomUUID(),
-    skillName: "Supabase",
-    skillLogo: "/images/supabase.png",
-  },
-  {
-    id: crypto.randomUUID(),
-    skillName: "Redux",
-    skillLogo: "/images/redux.png",
-  },
-];
+import { Container } from "./shared/Container";
+import { skillItems } from "../utils/data";
+import { SkillProps } from "../utils/types";
 
 function Skills() {
   return (
-    <div className=" pt-10 bg-gray-200 ">
-      <section className="min-h-screen max-w-7xl  mx-auto px-8 sm:px-12 md:px-14 ">
+    <Container>
+      <div className=" pt-10 min-h-screen ">
         <div className="text-center space-y-6  mb-3  py-10">
           <h3 className="text-2xl sm:text-3xl text-gray-800 font-bold">
             My Skills
@@ -84,13 +15,14 @@ function Skills() {
             Here are the technologies I&rsquo;ve worked with
           </p>
         </div>
-        <ul className="grid place-items-center grid-cols-1 sm:grid-cols-2 sm:gap-x-26 md:grid-cols-3 md:gap-x-68 md:px-26 lg:grid-cols-4 gap-x-20  gap-y-12 px-4 py-2">
-          {skillSet.map((skill) => (
-            <Skill key={skill.id} skill={skill} />
+        {/* <ul className="grid place-items-center grid-cols-1 sm:grid-cols-2 sm:gap-x-26 md:grid-cols-3 md:gap-x-68 md:px-26 lg:grid-cols-4 gap-x-20  gap-y-12 px-4 py-2"> */}
+        <ul className="grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-12 px-4 py-2">
+          {skillItems.map((skill, key) => (
+            <Skill key={key} skill={skill} />
           ))}
         </ul>
-      </section>
-    </div>
+      </div>
+    </Container>
   );
 }
 
@@ -100,7 +32,7 @@ function Skill({ skill }: SkillProps) {
       className="flex
         rounded-md
         overflow-x-hidden
-        w-65
+        max-w-full
         flex-col
         items-center
         gap-3
@@ -111,17 +43,17 @@ function Skill({ skill }: SkillProps) {
         transition-all
         duration-500
         py-10
-        px-16"
+       px-10 "
     >
       <Image
         width={60}
         height={56}
-        className="aspect-square max-w-full object-center object-cover "
-        src={skill.skillLogo}
-        alt={skill.skillName}
+        className="aspect-square max-w-full w-72 md:w-65 object-center object-cover "
+        src={`/images/${skill}.png`}
+        alt={skill}
       />
       <p className="font-semibold text-md w-60 text-center text-stone-800 text-lg">
-        {skill.skillName}
+        {skill}
       </p>
     </li>
   );

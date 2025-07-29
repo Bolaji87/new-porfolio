@@ -4,13 +4,14 @@ import ProjectModal from "./ProjectModal";
 
 import { projects } from "../utils/data";
 import { useProjects } from "../hooks/useProjects";
+import { Container } from "./shared/Container";
 
 function Projects() {
   const { handleSelect, handleClose, selectedProject } = useProjects();
 
   return (
-    <section className="min-h-screen bg-gray-200 px-6 py-20 text-stone-800  sm:px-12 md:px-16 lg:px-24">
-      <div className="mx-auto max-w-6xl">
+    <section className="min-h-screen  py-20 text-stone-800 ">
+      <Container>
         <header className="mb-12 text-center">
           <h2 className="text-3xl font-bold">My Projects</h2>
           <p className="mt-2 text-lg text-stone-700 ">
@@ -27,7 +28,7 @@ function Projects() {
             />
           ))}
         </div>
-      </div>
+      </Container>
 
       {selectedProject && (
         <ProjectModal project={selectedProject} onClose={handleClose} />
